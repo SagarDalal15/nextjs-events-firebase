@@ -19,9 +19,7 @@ function EventLogistics(props) {
       <div className={classes.image}>
         <Image
           style={{
-            borderRadius: "50%",
-            overflow: "hidden",
-            border: "5px solid white",
+            objectFit: "cover",
           }}
           width="10rem"
           height="10rem"

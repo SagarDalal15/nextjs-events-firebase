@@ -26,7 +26,7 @@ export default function EventItem(props) {
     <li className={classes.item}>
       <Image
         style={{ objectFit: "cover" }}
-        width="100%"
+        width="270rem"
         height="10rem"
         src={"/" + image}
         alt={title}
