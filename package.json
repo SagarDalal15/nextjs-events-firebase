@@ -8,7 +8,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -19,7 +18,6 @@
   },
   "devDependencies": {
     "eslint": "7.28.0",
-    "eslint-config-next": "11.0.0",
-    "gh-pages": "^3.2.2"
+    "eslint-config-next": "11.0.0"
   }
 }
