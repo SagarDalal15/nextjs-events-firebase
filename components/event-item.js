@@ -7,6 +7,7 @@ import Button from "./ui/button";
 import DateIcon from "./icons/date-icon";
 import AddressIcon from "./icons/address-icon";
 import ArrowRightIcon from "./icons/arrow-right-icon";
+import Image from "next/dist/client/image";
 
 export default function EventItem(props) {
   const { title, image, date, location, id } = props;
@@ -23,7 +24,13 @@ export default function EventItem(props) {
 
   return (
     <li className={classes.item}>
-      <img width="100%" height="10rem" src={"/" + image} alt={title} />
+      <Image
+        style={{ objectFit: "cover" }}
+        width="100%"
+        height="10rem"
+        src={"/" + image}
+        alt={title}
+      />
       <div className={classes.content}>
         <div className={classes.summary}>
           <h2>{title}</h2>

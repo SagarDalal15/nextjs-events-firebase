@@ -9,12 +9,6 @@
   gap: 1rem;
 }
 
-.item img {
-  width: 100%;
-  object-fit: cover;
-  height: 10rem;
-}
-
 .content {
   width: 100%;
   padding: 0 1rem;
