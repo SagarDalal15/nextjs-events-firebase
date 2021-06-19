@@ -1,5 +1,5 @@
 {
-  "homepage": "http://SagarDalal15.github.io/nextjs-events",
+  
   "name": "nextapp",
   "version": "0.1.0",
   "private": true,
@@ -7,9 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
+
   },
   "dependencies": {
     "next": "11.0.0",
