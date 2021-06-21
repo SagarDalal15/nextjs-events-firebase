@@ -49,7 +49,7 @@ export async function getStaticProps(context) {
   };
 }
 
-export async function getStaticPaths(context) {
+export async function getStaticPaths() {
   const events = await getFeaturedEvents();
   const paths = events.map((event) => ({ params: { eventId: event.id } })); // paths will an array
   return {

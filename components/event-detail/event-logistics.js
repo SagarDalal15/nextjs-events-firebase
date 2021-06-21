@@ -21,7 +21,7 @@ function EventLogistics(props) {
           style={{
             objectFit: "cover",
           }}
-          width="10rem"
+          width="270rem"
           height="10rem"
           src={`/${image}`}
           alt={imageAlt}

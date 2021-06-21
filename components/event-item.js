@@ -22,13 +22,15 @@ export default function EventItem(props) {
 
   const exploreLink = `/events/${id}`;
 
+  console.log(image);
+
   return (
     <li className={classes.item}>
       <Image
         style={{ objectFit: "cover" }}
         width="270rem"
         height="10rem"
-        src={"/" + image}
+        src={`/${image}`}
         alt={title}
       />
       <div className={classes.content}>

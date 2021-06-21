@@ -1,6 +1,3 @@
-//We can also get filtered events from firebase instead of all events
-
-// Getting all events from firebase
 export async function getAllEvents() {
   const response = await fetch(
     "https://nextjs-course-1f10b-default-rtdb.firebaseio.com/events.json"
@@ -17,7 +14,6 @@ export async function getAllEvents() {
   return events;
 }
 
-//filtering featured events from all events
 export async function getFeaturedEvents() {
   const allEvents = await getAllEvents();
 
