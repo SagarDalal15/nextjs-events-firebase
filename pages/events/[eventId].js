@@ -1,5 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
+import Head from "next/head";
 
 import EventSummary from "../../components/event-detail/event-summary";
 import EventLogistics from "../../components/event-detail/event-logistics";
@@ -18,6 +19,13 @@ export default function EventDetailPage(props) {
 
   return (
     <Fragment>
+      <Head>
+        <title>{event.title}</title>
+        <meta
+          name="description"
+          content="Find events according to your needs here."
+        />
+      </Head>
       <EventSummary title={event.title} />
       <EventLogistics
         date={event.date}
@@ -49,7 +57,7 @@ export async function getStaticProps(context) {
   };
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths(context) {
   const events = await getFeaturedEvents();
   const paths = events.map((event) => ({ params: { eventId: event.id } })); // paths will an array
   return {

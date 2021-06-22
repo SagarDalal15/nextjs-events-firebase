@@ -1,13 +1,13 @@
 import React from "react";
 
-import Link from "next/link";
-
 import classes from "./event-item.module.css";
 import Button from "./ui/button";
 import DateIcon from "./icons/date-icon";
 import AddressIcon from "./icons/address-icon";
 import ArrowRightIcon from "./icons/arrow-right-icon";
-import Image from "next/dist/client/image";
+
+// Nextjs Image create multiple version of our image and sends the optimized image in production eg: webp type image
+import Image from "next/image";
 
 export default function EventItem(props) {
   const { title, image, date, location, id } = props;
@@ -22,15 +22,14 @@ export default function EventItem(props) {
 
   const exploreLink = `/events/${id}`;
 
-  console.log(image);
-
   return (
     <li className={classes.item}>
       <Image
         style={{ objectFit: "cover" }}
-        width="270rem"
-        height="10rem"
-        src={`/${image}`}
+        //here width and size determine the size of image that is fetched
+        width={250}
+        height={160}
+        src={"/" + image}
         alt={title}
       />
       <div className={classes.content}>
