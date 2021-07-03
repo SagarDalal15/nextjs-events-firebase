@@ -1,6 +1,12 @@
+# NextJS events website (Firebase)
+
 ## Website Link
 
 https://nextjs-events-firebase.vercel.app
+
+<img width="1440" alt="Screenshot 2021-07-03 at 8 04 38 PM" src="https://user-images.githubusercontent.com/74422938/124357778-e7329d80-dc3a-11eb-883e-92a144397f65.png">
+
+<img width="1440" alt="Screenshot 2021-07-03 at 8 04 58 PM" src="https://user-images.githubusercontent.com/74422938/124357806-092c2000-dc3b-11eb-914a-b737e6f3d520.png">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
