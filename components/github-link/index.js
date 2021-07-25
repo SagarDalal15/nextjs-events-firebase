@@ -12,7 +12,7 @@ export default function GithubLink() {
     >
       <a
         style={{ color: "white" }}
-        href="https://github.com/SagarDalal15/nextjs-authentication"
+        href="https://github.com/SagarDalal15/nextjs-events-firebase"
       >
         See code on Github {"->"}
       </a>
